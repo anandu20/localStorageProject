@@ -7,14 +7,9 @@
     width: 100%;
     background-color: rgb(219, 214, 214);
 }
-.add{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    width: 100%;
-    padding: 15px;
-    border: none;
+#btn1{
     border-radius: 10px;
+
 }
 #inp{
     border-radius: 8px;
