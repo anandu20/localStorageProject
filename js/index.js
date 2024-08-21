@@ -35,3 +35,31 @@ else{
     alert("Cancelled")
 }
 }
+
+
+document.getElementById("filter").addEventListener('keyup',(e)=>{
+   
+    str=``;
+    for(i=0;i<localStorage.length;i++){
+        const key=localStorage.key(i);
+        const value=JSON.parse(localStorage.getItem(key));
+        
+        if(value.name.toLowerCase().includes(e.target.value.toLowerCase())){
+            str+=`<tr>
+            <th scope="row">${value.empid}</th>
+            <td>${value.name}</td>
+            <td>${value.designation}</td>
+            <td>${value.salary}</td>
+            <td>${value.experience}</td>
+            <td><a href="./html/edit.html?id=${value.empid}"> <button class="btn btn-outline-success">Edit</button></a>
+        <button class="btn btn-outline-danger" onclick="delemp('${value.empid}')">Delete</button></td>
+      </tr>`
+        }
+        else{
+            document.getElementById("tbl").innerHTML="<h3>EMPLOYEE NOT  FOUND</h3>"  
+        }
+        
+        document.getElementById("tb").innerHTML=str;
+    }
+    
+})
