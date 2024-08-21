@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sub{
+    width: 45%;
+    height: 60vh;
+    /* border: 1px solid black; */
+    background-color: rgba(220, 146, 106, 0.76);
+    border-radius: 15px;
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;    
+
+}
+.main  table{
+    width:50%;
+    height: 50vh;
+    margin-left: 5%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.main table input[type="text"]{
+    width: 400px;
+    height: 40px;
+    margin-left: 8%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn{
+    color: white;
+    margin-left: 9%;
+    margin-top: 3%;
+    margin-bottom: 10px;
+}
+h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
